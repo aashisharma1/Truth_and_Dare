@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Truth and Dare</string>
+    <string name="app_name">Truth_and_Dare</string>
     <string name="demo_question">Demo question</string>
     <string name="copy">Copy</string>
     <string name="share">Share</string>
