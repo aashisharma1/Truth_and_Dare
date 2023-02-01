@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Truth and Dare</string>
+    <string name="demo_question">What is your Top Priority?</string>
+    <string name="copy">Copy</string>
+    <string name="share">Share</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="_00_05">00.05</string>
+    <string name="t">T</string>
+    <string name="f">D</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="language">Language</string>
+    <string name="hide">Hide</string>
+    <string name="bottom_sheet">Bottom Sheet</string>
+    <string name="follow">Follow Us</string>
+    <string name="todo">Instagram</string>
+    <array name="lanuage">
+        <item>English</item>
+        <item>বাংলা (Bengali)</item>
+        <item>हिंदी (Hindi)</item>
+        <item>Deutsch (German)</item>
+        <item>Français (French)</item>
+        <item>Español (Spanish)</item>
+        <item>Tagalog (Filipino)</item>
+    </array>
+</resources>

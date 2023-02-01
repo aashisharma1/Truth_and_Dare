@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="5dp"
+        app:shapeAppearanceOverlay="@style/Widget.Material3.CardView.Outlined"
+        android:id="@+id/promotion"
+        android:layout_marginBottom="5dp"
+        android:elevation="4dp"
+        android:layout_height="180dp">
+      <androidx.viewpager2.widget.ViewPager2
+          android:layout_width="match_parent"
+          android:paddingEnd="80dp"
+          android:id="@+id/viewPagerImageSlider"
+          android:paddingStart="80dp"
+          android:layout_height="match_parent"/>
+    </com.google.android.material.card.MaterialCardView>
+
+
+<com.google.android.material.card.MaterialCardView
+    android:layout_width="match_parent"
+    app:cardCornerRadius="10dp"
+    android:elevation="5dp"
+    android:layout_margin="4dp"
+    android:layout_below="@+id/promotion"
+    android:id="@+id/cardQuestion"
+    android:layout_height="150dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:paddingEnd="9dp"
+        style="@style/TextAppearance.Material3.BodySmall"
+        android:orientation="horizontal"
+        android:layout_height="match_parent"
+        tools:ignore="RtlSymmetry">
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/QuestionShow"
+            android:fontFamily="casual"
+            android:padding="7dp"
+            android:textSize="20sp"
+            android:layout_margin="7dp"
+            style="@style/TextAppearance.Material3.TitleMedium"
+            android:text="@string/demo_question"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="6"
+        android:layout_margin="4dp"
+        android:id="@+id/cardoption"
+        android:layout_below="@+id/cardQuestion"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:text="@string/copy"
+            android:textColor="@color/mycolor"
+            android:id="@+id/copytext"
+            app:icon="@drawable/copy_24"
+            app:strokeColor="@color/Qcolor"
+            app:cornerRadius="4dp"
+            android:layout_margin="4dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:text="@string/share"
+            android:layout_weight="2"
+            android:id="@+id/shareToApps"
+            app:cornerRadius="4dp"
+            app:icon="@drawable/share_24"
+            android:layout_margin="4dp"
+            android:textColor="@color/black"
+            app:strokeColor="@color/black"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:id="@+id/whatsappshare"
+            android:text="@string/whatsapp"
+            app:cornerRadius="4dp"
+            android:layout_margin="4dp"
+            app:icon="@drawable/whatshot_24"
+            android:textColor="@color/black"
+            app:strokeColor="@color/black"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/cardoption"
+        android:layout_marginTop="20dp"
+        android:id="@+id/cardtruthdare"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            app:cardElevation = "16dp"
+            app:cardCornerRadius = "160dp"
+            android:layout_margin = "16dp"
+            android:id="@+id/truth"
+            android:focusable="true"
+            android:layout_gravity="center"
+            android:foregroundGravity = "center"
+            android:layout_width = "120dp"
+            android:layout_height = "120dp">
+
+            <!-- simple image view -->
+       <TextView
+           android:layout_width="match_parent"
+           android:text="@string/t"
+           style="@style/TextAppearance.Material3.TitleMedium"
+           android:textSize="50sp"
+           android:gravity="center"
+           android:layout_height="match_parent"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardElevation = "16dp"
+            app:cardCornerRadius = "160dp"
+            android:id="@+id/dare"
+            android:layout_margin = "16dp"
+            android:clickable="true"
+            android:foregroundGravity = "center"
+            android:layout_width = "120dp"
+            android:layout_height = "120dp"
+            android:focusable="true">
+
+            <!-- simple image view -->
+            <TextView
+                android:layout_width="match_parent"
+                android:text="@string/f"
+                style="@style/TextAppearance.Material3.TitleMedium"
+                android:textSize="50sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_height="match_parent"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/follow"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardtruthdare"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="59dp"
+        android:text="@string/follow"
+        android:textColor="@color/folowback"
+        app:cornerRadius="5dp"
+        tools:ignore="RtlSymmetry" />
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:src="@drawable/up_24"
+        android:contentDescription="@string/bottom_sheet"
+        android:layout_margin="20dp"
+        android:id="@+id/FButoon"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+</RelativeLayout>
