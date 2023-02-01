@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatDelegate;
 
@@ -47,7 +46,6 @@ public class BottomSheet extends BottomSheetDialogFragment {
 
         for (int i = 0; i < aa.length; i++) {
             if (aa[i].equals(p)) {
-                Toast.makeText(activity, p, Toast.LENGTH_SHORT).show();
                 spinner.setSelection(i);
                 break;
             }
